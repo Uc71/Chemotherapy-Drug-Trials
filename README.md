@@ -1,4 +1,4 @@
-# Matplotlib-Homework
+# Chemotherapy Drug Trials
 
 Observations:
 1. There was a strong correlation, with r greater than .75, between mouse weight and the average tumor volume across all time points.
