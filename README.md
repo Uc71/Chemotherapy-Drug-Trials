@@ -5,6 +5,13 @@ Observations:
 2. The drugs which got the most tests were Ramicane and Infubinol, and the drug with the least tests was Propriva.
 3. There were no outlier tumor volumes for Ramicane, Infubinol, Ceftamin, and Capomulin.
 
+This project attempts to answer the question: on average, which cancer drug is most effective at reducing tumor volumes, and what is the relation between mouse weight and the rate of success in reducing tumor volumes?
+
+To run the code in the Jupyter Notebook file, simply press the right-pointing play button to the left of each code cell.
+
+Here is the first dataframe, which I made from merging the two datasets together on Mouse ID. The data has not been altered in any other way:
+![image](https://user-images.githubusercontent.com/73863977/119921146-7e6d4c80-bf3b-11eb-9a66-9d88c68f74c9.png)
+
 In this assignment, I checked the original dataset for the total number of unique mouse IDs.
 I then checked to see if any mice had multiple data entries for the same time point, using a groupby object, visualized with a count function.
 I identified one mouse as having duplicate time points and eliminated all data corresponding with that mouse ID.
@@ -23,7 +30,6 @@ I attempted to make the formatting as similar as possible between both plots.
 I used .loc() to reduce my cleaned dataframe to only data for Capomulin, Ramicane, Infubinol, and Ceftamin, for only timepoints of value 45.
 I made a datframe showing the quartiles and InterQuartile Range for the final tumor volumes for each of these 4 drugs.
 To this dataframe, I added an "Outliers?" column containing "Yes" or "No" answers based on a calculation of whether maximum and minimum tumor volumes for each drug lay outside the bounds of Q1-1.5IQR and Q3+1.5IQR.
-
 
 
 I used .loc() and .sample() on my cleaned DataFrame to eliminate all data not for Capomulin and then to select and print a random row.
