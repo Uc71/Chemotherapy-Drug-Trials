@@ -10,7 +10,7 @@ This project attempts to answer the question: on average, which cancer drug is m
 To run the code in the Jupyter Notebook file, simply press the right-pointing play button to the left of each code cell.
 
 Here is the first dataframe, which I made from merging the two datasets together on Mouse ID. The data has not been altered in any other way:
-![image](https://user-images.githubusercontent.com/73863977/119921146-7e6d4c80-bf3b-11eb-9a66-9d88c68f74c9.png)
+![image](https://user-images.githubusercontent.com/73863977/119922797-91cde700-bf3e-11eb-9482-b0a1b1831a3b.png)
 
 In this assignment, I checked the original dataset for the total number of unique mouse IDs.
 I then checked to see if any mice had multiple data entries for the same time point, using a groupby object, visualized with a count function.
