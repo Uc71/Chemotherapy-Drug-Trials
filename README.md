@@ -22,7 +22,7 @@ Here is the cleaned dataframe:
 
 
 I used the cleaned dataset to compute means, medians, variances, standard deviations, and standard errors of the mean for all of the numeric data in each drug regimen.
-First, I computed each statistic as a new dataframe and then merging all the dataframes into one df, pictured here:
+First, I computed each statistic as a new dataframe and then merged all the dataframes into one df, pictured here:
 ![image](https://user-images.githubusercontent.com/73863977/119921483-14a17280-bf3c-11eb-9053-4f380790d83c.png)
 Then, I accomplished exactly the same task again, using the aggregation method to compute all the stats in one line of code. The result is here:
 ![image](https://user-images.githubusercontent.com/73863977/119921987-eec89d80-bf3c-11eb-9209-5d5561033e7b.png)
@@ -32,7 +32,7 @@ Then, I accomplished exactly the same task again, using the aggregation method t
 I created a bar graph showing the total number of tests done for each drug regimen.
 I did this twice, first using pandas' innate graphing capabilities, then by using matplotlib.
 I attempted to make the formatting as similar as possible between both graphs.
-The pylot chart is here:
+The pyplot chart is here:
 ![image](https://user-images.githubusercontent.com/73863977/119922062-0e5fc600-bf3d-11eb-9db2-027ea41ef983.png)
 
 The matplotlib chart is here:
