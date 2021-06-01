@@ -13,8 +13,8 @@ Here is the first dataframe, which I made from merging the two datasets together
 ![image](https://user-images.githubusercontent.com/73863977/119922797-91cde700-bf3e-11eb-9482-b0a1b1831a3b.png)
 
 In this assignment, I checked the original dataset for the total number of unique mouse IDs.
-I then checked to see if any mice had multiple data entries for the same time point, using a groupby object, visualized with a count function.
-I identified one mouse as having duplicate time points and eliminated all data corresponding with that mouse ID.
+I then checked to see if any mice had multiple data entries for the same time point, using a groupby object visualized with a count function.
+I identified one mouse as having duplicate time points and eliminated all data corresponding to that mouse ID.
 Here is data for the duplicated mouse:
 ![image](https://user-images.githubusercontent.com/73863977/119921332-ce4c1380-bf3b-11eb-9530-f31312904503.png)
 Here is the cleaned dataframe:
@@ -22,9 +22,9 @@ Here is the cleaned dataframe:
 
 
 I used the cleaned dataset to compute means, medians, variances, standard deviations, and standard errors of the mean for all of the numeric data in each drug regimen.
-First, I computed each statistic as a new dataframe and then merged all the dataframes into one df, pictured here:
+I computed each statistic as a new dataframe and then merged all the dataframes into one df, pictured here:
 ![image](https://user-images.githubusercontent.com/73863977/119921483-14a17280-bf3c-11eb-9053-4f380790d83c.png)
-Then, I accomplished exactly the same task again, using the aggregation method to compute all the stats in one line of code. The result is here:
+Then, I accomplished the same task again, using the aggregation method to compute all the stats in one line of code. The result is here:
 ![image](https://user-images.githubusercontent.com/73863977/119921987-eec89d80-bf3c-11eb-9209-5d5561033e7b.png)
 
 
@@ -52,7 +52,7 @@ The matplotlib chart is here:
 
 
 I used .loc() to reduce my cleaned dataframe to only data for Capomulin, Ramicane, Infubinol, and Ceftamin, for only timepoints of value 45.
-Here is the df with only the 4 drugs of interest:
+Here is the df with only the 4 drugs of interest at timepoint=45:
 ![image](https://user-images.githubusercontent.com/73863977/119922270-7a422e80-bf3d-11eb-8dde-a5572b4b1d7c.png)
 
 
@@ -70,7 +70,7 @@ I used the Mouse ID from the row returned by .sample() to .loc() the dataframe f
 ![image](https://user-images.githubusercontent.com/73863977/119922488-e1f87980-bf3d-11eb-83b5-04de2b20c7ba.png)
 
 
-I used matplotlib to generate a scatterplot of mouse weights vs. over-time averaged tumor volumes for all the mice treated with Capomulin.
+I used matplotlib to generate a scatterplot of mouse weights vs. averaged-over-time tumor volumes for all the mice treated with Capomulin.
 I then used linregress() to get the slope and y-intercept of the linear regression model for this plot.
 I drew the regression line on the plot and printed the slope and y-intercept for the model in a text statement.
 In the same text statement, I reported the correlation coefficient for the scatterplot linear regression model.
