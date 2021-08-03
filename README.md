@@ -74,6 +74,6 @@ I used matplotlib to generate a scatterplot of mouse weights vs. averaged-over-t
 I then used linregress() to get the slope and y-intercept of the linear regression model for this plot.
 I drew the regression line on the plot and printed the slope and y-intercept for the model in a text statement.
 In the same text statement, I reported the correlation coefficient for the scatterplot linear regression model.
-![image](https://user-images.githubusercontent.com/73863977/119922538-fdfc1b00-bf3d-11eb-986b-38f8c494e84d.png)
+![image](https://user-images.githubusercontent.com/73863977/127943643-4f94f236-adc2-494c-93e7-d6101d6f5c1f.png)
 ![image](https://user-images.githubusercontent.com/73863977/119922554-081e1980-bf3e-11eb-8099-74b8e77c8fb4.png)
 
